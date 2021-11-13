@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import initializeFirebase from "../Pages/Firebase/firebase.init";
 import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut,updateProfile,onAuthStateChanged } from "firebase/auth";
 
