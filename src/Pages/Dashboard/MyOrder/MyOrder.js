@@ -8,7 +8,7 @@ const MyOrder = () => {
     const [orders,setOrders] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/single-order',{
+        fetch('https://polar-harbor-56501.herokuapp.com/single-order',{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'
@@ -22,7 +22,7 @@ const MyOrder = () => {
     const handleDelete=id=>{
     const proceed = window.confirm('Are you sure,you want to delete?');
     if(proceed){
-        const url=`http://localhost:5000/orders/${id}`;
+        const url=`https://polar-harbor-56501.herokuapp.com/orders/${id}`;
         fetch(url,{
             method:'Delete'
         })

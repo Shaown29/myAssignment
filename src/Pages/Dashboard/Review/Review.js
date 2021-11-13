@@ -25,7 +25,7 @@ const Review = () => {
         // POST: add review API call
     const handleAddReview = e => {
         e.preventDefault();
-        fetch(`http://localhost:5000/reviews`, {
+        fetch(`https://polar-harbor-56501.herokuapp.com/reviews`, {
           method: 'POST',
           headers: {
             'content-type': 'application/json'

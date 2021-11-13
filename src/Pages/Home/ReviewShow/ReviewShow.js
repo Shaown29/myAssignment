@@ -4,7 +4,7 @@ import ReviewShows from '../Home/ReviewShows/ReviewShows';
 
 const ReviewShow = () => {
     const [reviews,setReviews] = useState([]);
-    fetch('http://localhost:5000/reviews')
+    fetch('https://polar-harbor-56501.herokuapp.com/reviews')
     .then(res=>res.json())
     .then(data=>setReviews(data))
     return (

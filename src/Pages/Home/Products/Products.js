@@ -4,7 +4,7 @@ import HomeProduct from '../HomeProduct/HomeProduct';
 
 const Products = () => {
     const [homeproducts,setHomeProducts] = useState([]);
-    fetch('http://localhost:5000/products')
+    fetch('https://polar-harbor-56501.herokuapp.com/products')
     .then(res=>res.json())
     .then(data=>setHomeProducts(data.slice(0,6)))
     return (

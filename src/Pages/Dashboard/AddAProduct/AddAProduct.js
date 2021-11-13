@@ -22,7 +22,7 @@ const AddAProduct = () => {
 
     // POST: add product API call
     const handleAddProduct = e => {
-        fetch(`http://localhost:5000/products`, {
+        fetch(`https://polar-harbor-56501.herokuapp.com/products`, {
           method: 'POST',
           headers: {
             'content-type': 'application/json'

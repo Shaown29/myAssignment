@@ -13,7 +13,7 @@ const Purchase = () => {
     const onSubmit = data => {console.log(data);
     
     
-    fetch('http://localhost:5000/orders',{
+    fetch('https://polar-harbor-56501.herokuapp.com/orders',{
         method:'Post',
         headers:{
             'content-type': 'application/json'
@@ -29,7 +29,7 @@ const Purchase = () => {
     })
 }; 
     useEffect(()=>{
-        fetch('http://localhost:5000/products')
+        fetch('https://polar-harbor-56501.herokuapp.com/products')
         .then(res=>res.json())
         .then(data=> {
             const result = data.filter(item => item._id === Id);
