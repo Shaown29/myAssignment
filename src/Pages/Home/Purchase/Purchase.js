@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useForm } from "react-hook-form";
-import { useEffect, useState } from 'react/cjs/react.development';
+import { useEffect, useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
 
 const Purchase = () => {

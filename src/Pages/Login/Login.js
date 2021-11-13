@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, useHistory, useLocation } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
