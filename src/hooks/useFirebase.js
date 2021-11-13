@@ -68,7 +68,7 @@ const useFirebae=()=>{
           });
           return () => unsubscribe;
           
-    },[])
+    },[auth])
 
     useEffect(() =>{
       fetch(`https://polar-harbor-56501.herokuapp.com/user/${user.email}`)
