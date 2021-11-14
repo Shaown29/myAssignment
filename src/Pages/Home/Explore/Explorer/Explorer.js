@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../../../../Shared/Header/Header';
+// import Header from '../../../../Shared/Header/Header';
 import './Explorer.css';
 
 const Explorer = ({product}) => {
     const {name,img,describe,price,quality,_id}=product;
+
     return (
         <div className='col-lg-6 col-12 size'>
             <img className='image-size' src={img} alt=''/>
@@ -13,7 +14,7 @@ const Explorer = ({product}) => {
             <h4>Specification: {quality}</h4>
             <p>description: {describe}</p>
             <Link to={`/purchase/${_id}`}><button className='mx-1 my-3'>Purchase</button></Link>
-            </div>
+        </div>
     );
 };
 
