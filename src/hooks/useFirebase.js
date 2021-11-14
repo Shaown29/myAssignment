@@ -3,7 +3,7 @@ import initializeFirebase from "../Pages/Firebase/firebase.init";
 import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut,updateProfile,onAuthStateChanged } from "firebase/auth";
 
 initializeFirebase();
-const useFirebae=()=>{
+const useFirebase=()=>{
     const [user,setUser] = useState({});
     const [loading, setLoading] = useState(true);
     const [authError, setAuthError] = useState('');
@@ -108,4 +108,4 @@ const useFirebae=()=>{
     }
 
 }
-export default useFirebae;
+export default useFirebase;
